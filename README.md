@@ -21,11 +21,15 @@ model-relay-directory/
 ├── index.html
 ├── styles.css
 ├── app.js
+├── data/
+│   └── providers.json
 ├── AGENTS.md
 └── README.md
 ```
 
-站点数据集中在 `app.js` 的 `providers` 数组中。新增或更新平台时，请按照 [AGENTS.md](AGENTS.md) 的字段和文案规则维护。
+站点数据集中在 `data/providers.json`。`app.js` 只负责加载数据、筛选和渲染。新增或更新平台时，请按照 [AGENTS.md](AGENTS.md) 的字段和文案规则维护。
+
+本地预览需要通过 HTTP 服务访问，因为页面会加载 JSON 数据；不要直接双击 `index.html`。
 
 ## 部署到 Cloudflare Pages
 
