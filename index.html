@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="模型中转站导航，快速比较奖励、签到与模型支持。" />
+    <title>中转站导航 · 找到值得注册的模型中转站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="中转站导航首页">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
+          <span>中转站导航</span>
+        </a>
+        <label class="search-box top-search">
+          <i data-lucide="search"></i>
+          <input id="searchInput" type="search" placeholder="搜索平台或模型" autocomplete="off" />
+          <kbd>/</kbd>
+        </label>
+        <div class="top-actions">
+          <a class="maintainer-link" href="mailto:congmucc@qq.com" title="维护邮箱：congmucc@qq.com" aria-label="联系维护者 congmucc@qq.com"><i data-lucide="mail"></i><span>congmucc@qq.com</span></a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> 独立整理 · 持续更新</div>
+            <h1 id="hero-title">今天，注册哪个<br /><em>模型中转站？</em></h1>
+            <p>奖励、签到、模型，一眼看懂。挑一个适合你的，整张卡片直接进入。</p>
+          </div>
+          <div class="hero-aside">
+            <div class="signal-line"><span class="signal-dot"></span> 当前收录 <strong>12</strong> 个站点</div>
+            <div class="signal-line muted"><i data-lucide="shield-check"></i> 信息仅供参考，以平台实际规则为准</div>
+          </div>
+        </section>
+
+        <section class="directory" id="directory" aria-labelledby="directory-title">
+          <div class="filter-row" role="tablist" aria-label="平台筛选">
+            <div class="filter-group category-group">
+              <button class="filter-tab active" type="button" data-filter="all" data-kind="category" role="tab" aria-selected="true"><i data-lucide="layout-grid"></i>全部 <span>7</span></button>
+              <button class="filter-tab" type="button" data-filter="free" data-kind="category" role="tab" aria-selected="false"><i data-lucide="gift"></i>公益</button>
+              <button class="filter-tab" type="button" data-filter="paid" data-kind="category" role="tab" aria-selected="false"><i data-lucide="wallet-cards"></i>付费</button>
+            </div>
+            <div class="filter-group recommendation-group">
+              <button class="filter-tab" type="button" data-filter="recommended" data-kind="recommendation" role="tab" aria-selected="false"><i data-lucide="sparkles"></i>推荐</button>
+            </div>
+            <div class="filter-group model-filter-group">
+              <span class="filter-label">按模型</span>
+              <button class="filter-tab family-gpt" type="button" data-filter="GPT" data-kind="model" role="tab" aria-selected="false">GPT</button>
+              <button class="filter-tab family-anthropic" type="button" data-filter="Anthropic" data-kind="model" role="tab" aria-selected="false">Anthropic</button>
+              <button class="filter-tab family-grok" type="button" data-filter="Grok" data-kind="model" role="tab" aria-selected="false">Grok</button>
+              <button class="filter-tab family-cn" type="button" data-filter="国产模型" data-kind="model" role="tab" aria-selected="false">国产</button>
+            </div>
+          </div>
+
+          <div class="provider-list" id="providerList"></div>
+          <div class="empty-state" id="emptyState" hidden>
+            <i data-lucide="scan-search"></i>
+            <strong>没有找到匹配的平台</strong>
+            <span>试试别的关键词或切换筛选条件</span>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
