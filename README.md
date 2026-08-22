@@ -21,11 +21,11 @@ model-relay-directory/
 ├── index.html
 ├── styles.css
 ├── app.js
-└── docs/
-    └── AGENTS.md
+├── AGENTS.md
+└── README.md
 ```
 
-站点数据集中在 `app.js` 的 `providers` 数组中。新增或更新平台时，请按照 [docs/AGENTS.md](docs/AGENTS.md) 的字段和文案规则维护。
+站点数据集中在 `app.js` 的 `providers` 数组中。新增或更新平台时，请按照 [AGENTS.md](AGENTS.md) 的字段和文案规则维护。
 
 ## 部署到 Cloudflare Pages
 
