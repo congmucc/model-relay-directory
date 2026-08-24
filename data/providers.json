@@ -70,6 +70,29 @@
     "url": "https://anyrouter.top/register?aff=bjZ1"
   },
   {
+    "id": "tabitoken",
+    "name": "Tabitoken",
+    "alias": "tabitoken.com",
+    "logo": "T",
+    "logoTone": "indigo",
+    "category": "free",
+    "featured": true,
+    "reward": "120",
+    "rewardType": "gift",
+    "checkin": true,
+    "models": [
+      { "label": "OPUS 5", "family": "anthropic" },
+      { "label": "OPUS 4.8", "family": "anthropic" }
+    ],
+    "families": ["Anthropic"],
+    "limit": "注册送 120 美元额度，每日签到再送 10 美元。",
+    "tags": ["可签到", "签到 $10"],
+    "login": [],
+    "updated": "2026.08.24",
+    "summary": "公益中转站，支持 OPUS 5 与 OPUS 4.8，每日签到可领取额外额度。",
+    "url": "https://tabitoken.com/sign-up?aff=M6s4"
+  },
+  {
     "id": "vcnovb",
     "name": "VC Novb",
     "alias": "sub.vcnovb.cn",
