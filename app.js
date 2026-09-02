@@ -12,8 +12,9 @@ function icon(name) { return `<i data-lucide="${name}"></i>`; }
 function modelTag(model) { return `<span class="model-tag model-${model.family}">${model.label}</span>`; }
 
 function providerCard(provider) {
-  const statusClass = provider.checkin ? "yes" : "no";
-  const statusText = provider.checkin ? "可签到" : "不可签到";
+  const statusKnown = typeof provider.checkin === "boolean";
+  const statusClass = provider.checkin ? "yes" : statusKnown ? "no" : "unknown";
+  const statusText = provider.checkin ? "可签到" : statusKnown ? "不可签到" : "签到未知";
   const categoryLabel = provider.category === "paid" ? "付费" : "公益";
   const recommendation = provider.featured ? " · 推荐" : "";
   const footerTags = provider.category === "paid" ? [...provider.tags, ...provider.login] : [statusText, ...provider.login];

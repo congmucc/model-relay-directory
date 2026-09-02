@@ -93,6 +93,28 @@
     "url": "https://tabitoken.com/sign-up?aff=M6s4"
   },
   {
+    "id": "kktoken",
+    "name": "KKToken",
+    "alias": "kktoken.cc",
+    "logo": "K",
+    "logoTone": "coral",
+    "category": "free",
+    "featured": true,
+    "reward": "100",
+    "rewardType": "gift",
+    "checkin": null,
+    "models": [
+      { "label": "OPUS 5", "family": "anthropic" }
+    ],
+    "families": ["Anthropic"],
+    "limit": "注册送 100 美元额度。",
+    "tags": [],
+    "login": [],
+    "updated": "2026.09.02",
+    "summary": "公益中转站，支持 OPUS 5，注册即可获得额度。",
+    "url": "https://kktoken.cc/sign-up?aff=i2Si"
+  },
+  {
     "id": "vcnovb",
     "name": "VC Novb",
     "alias": "sub.vcnovb.cn",
