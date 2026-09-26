@@ -115,6 +115,28 @@
     "url": "https://kktoken.cc/sign-up?aff=i2Si"
   },
   {
+    "id": "hanziapi",
+    "name": "HanziAPI",
+    "alias": "hanziapi.cc.cd",
+    "logo": "H",
+    "logoTone": "dark",
+    "category": "paid",
+    "featured": true,
+    "reward": "0.08",
+    "rewardType": "multiplier",
+    "checkin": null,
+    "models": [
+      { "label": "OPUS 5.5", "family": "anthropic" }
+    ],
+    "families": ["Anthropic"],
+    "limit": "0.08 倍率，主打 Anthropic 多线路，OPUS 5.5 性价比高于 GPT。",
+    "tags": ["可作主站"],
+    "login": [],
+    "updated": "2026.09.26",
+    "summary": "Anthropic 线路选择多，主推 OPUS 5.5，可以当主站长期使用。",
+    "url": "https://hanziapi.cc.cd/sign-up?aff=ndKW"
+  },
+  {
     "id": "vcnovb",
     "name": "VC Novb",
     "alias": "sub.vcnovb.cn",
