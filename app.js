@@ -34,7 +34,9 @@ function renderIcons(root = document) {
 
 /* ===== 卡片渲染 ===== */
 const CATEGORY_LABEL = { free: '公益', paid: '付费' };
-const REWARD_LABEL = { multiplier: '基础倍率', gift: '注册送' };
+// 付费站主视觉按站点计价方式区分：
+//   multiplier 走倍率；price 是没有倍率概念的聚合市场，走按量起步价；gift 是公益站的注册赠送。
+const REWARD_LABEL = { multiplier: '基础倍率', price: '起步价 / 1M', gift: '注册送' };
 
 function modelTag(model) {
   return `<span class="model-tag model-${model.family}">${model.label}</span>`;
@@ -55,8 +57,10 @@ function footerTags(provider, statusText) {
 
 function footerTagHtml(tag, provider, status) {
   const isStatus = provider.category === 'free' && tag === status.text;
-  if (!isStatus) return `<span>${tag}</span>`;
-  return `<span class="status ${status.className}"><span class="status-dot"></span>${tag}</span>`;
+  if (isStatus) return `<span class="status ${status.className}"><span class="status-dot"></span>${tag}</span>`;
+  // 聚合站用一个独立样式，方便一眼从标签里认出来
+  if (tag === '聚合') return `<span class="tag-aggregate">${tag}</span>`;
+  return `<span>${tag}</span>`;
 }
 
 function rewardHtml(provider) {

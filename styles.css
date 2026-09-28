@@ -979,6 +979,12 @@ h1 em {
   background: #f7efde;
 }
 
+/* 聚合站标签：放在付费站规则之后，权重与顺序都确保生效 */
+.provider-card .card-pills > span.tag-aggregate {
+  color: #2b5fa8;
+  background: #dfeaff;
+}
+
 .card-footer .updated {
   margin-left: auto;
   color: #9ba6b0;

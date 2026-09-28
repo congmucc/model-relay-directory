@@ -230,8 +230,32 @@
     "tags": ["聚合", "倍率 0.01–0.30"],
     "login": ["QQ邮箱"],
     "updated": "2026.08.23",
-    "summary": "以 GPT 为主的聚合入口，模型选择更丰富，适合多供应商切换。",
+    "summary": "聚合多个中转站，一个入口切换 GPT、Anthropic、Grok 与 DeepSeek 等模型。",
     "url": "https://aihub.top/register?aff=SFJ3HNFH7TZX"
+  },
+  {
+    "id": "a6api",
+    "name": "A6API",
+    "alias": "a6api.com",
+    "logo": "A",
+    "logoTone": "dark",
+    "category": "paid",
+    "featured": false,
+    "reward": "0.0036",
+    "rewardType": "price",
+    "checkin": null,
+    "models": [
+      { "label": "GPT 全系", "family": "gpt" },
+      { "label": "Anthropic", "family": "anthropic" },
+      { "label": "DeepSeek", "family": "deepseek" }
+    ],
+    "families": ["GPT", "Anthropic", "国产模型"],
+    "limit": "多商家供货实时比价，按 1M tokens 计价，低额充值即可先试。",
+    "tags": ["聚合", "自动路由"],
+    "login": ["GitHub", "Google", "Telegram"],
+    "updated": "2026.09.28",
+    "summary": "聚合多个中转站与模型商家，自动比价并按价格、成功率、延迟择优路由。",
+    "url": "https://a6api.com/?auth=register&aff=t34g"
   },
   {
     "id": "piteai",
