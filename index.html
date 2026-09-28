@@ -35,7 +35,7 @@
             <p>奖励、签到、模型，一眼看懂。挑一个适合你的，整张卡片直接进入。</p>
           </div>
           <div class="hero-aside">
-            <div class="signal-line"><span class="signal-dot"></span> 当前收录 <strong>12</strong> 个站点</div>
+            <div class="signal-line"><span class="signal-dot"></span> 当前收录 <strong id="siteCount"></strong> 个站点</div>
             <div class="signal-line muted"><i data-lucide="shield-check"></i> 信息仅供参考，以平台实际规则为准</div>
           </div>
         </section>
@@ -43,7 +43,7 @@
         <section class="directory" id="directory" aria-labelledby="directory-title">
           <div class="filter-row" role="tablist" aria-label="平台筛选">
             <div class="filter-group category-group">
-              <button class="filter-tab active" type="button" data-filter="all" data-kind="category" role="tab" aria-selected="true"><i data-lucide="layout-grid"></i>全部 <span>7</span></button>
+              <button class="filter-tab active" type="button" data-filter="all" data-kind="category" role="tab" aria-selected="true"><i data-lucide="layout-grid"></i>全部 <span id="totalCount"></span></button>
               <button class="filter-tab" type="button" data-filter="free" data-kind="category" role="tab" aria-selected="false"><i data-lucide="gift"></i>公益</button>
               <button class="filter-tab" type="button" data-filter="paid" data-kind="category" role="tab" aria-selected="false"><i data-lucide="wallet-cards"></i>付费</button>
             </div>
@@ -66,11 +66,9 @@
             <span>试试别的关键词或切换筛选条件</span>
           </div>
         </section>
-
       </main>
     </div>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="app.js"></script>
   </body>
 </html>
