@@ -1,5 +1,29 @@
 [
   {
+    "id": "a6api",
+    "name": "A6API",
+    "alias": "a6api.com",
+    "logo": "A",
+    "logoTone": "dark",
+    "category": "paid",
+    "featured": true,
+    "reward": "0.0036",
+    "rewardType": "price",
+    "checkin": null,
+    "models": [
+      { "label": "GPT 全系", "family": "gpt" },
+      { "label": "Anthropic", "family": "anthropic" },
+      { "label": "DeepSeek", "family": "deepseek" }
+    ],
+    "families": ["GPT", "Anthropic", "国产模型"],
+    "limit": "多商家供货实时比价，模型覆盖最全，按 1M tokens 计价，低额充值即可先试。",
+    "tags": ["聚合", "自动路由"],
+    "login": ["GitHub", "Google", "Telegram"],
+    "updated": "2026.09.28",
+    "summary": "聚合站里模型最全、数量最多的一家，多个中转站与商家供货，自动比价并按价格、成功率、延迟择优路由。",
+    "url": "https://a6api.com/?auth=register&aff=t34g"
+  },
+  {
     "id": "agent-router",
     "name": "Agent Router",
     "alias": "agentrouter.org",
@@ -115,52 +139,6 @@
     "url": "https://kktoken.cc/sign-up?aff=i2Si"
   },
   {
-    "id": "hanziapi",
-    "name": "HanziAPI",
-    "alias": "hanziapi.cc.cd",
-    "logo": "H",
-    "logoTone": "dark",
-    "category": "paid",
-    "featured": true,
-    "reward": "0.08",
-    "rewardType": "multiplier",
-    "checkin": null,
-    "models": [
-      { "label": "OPUS 5.5", "family": "anthropic" }
-    ],
-    "families": ["Anthropic"],
-    "limit": "0.08 倍率，主打 Anthropic 多线路，OPUS 5.5 性价比高于 GPT。",
-    "tags": ["可作主站"],
-    "login": [],
-    "updated": "2026.09.26",
-    "summary": "Anthropic 线路选择多，主推 OPUS 5.5，可以当主站长期使用。",
-    "url": "https://hanziapi.cc.cd/sign-up?aff=ndKW"
-  },
-  {
-    "id": "vcnovb",
-    "name": "VC Novb",
-    "alias": "sub.vcnovb.cn",
-    "logo": "V",
-    "logoTone": "indigo",
-    "category": "paid",
-    "featured": false,
-    "reward": "0.08",
-    "rewardType": "multiplier",
-    "checkin": false,
-    "models": [
-      { "label": "GPT", "family": "gpt" },
-      { "label": "Anthropic", "family": "anthropic" },
-      { "label": "DeepSeek", "family": "deepseek" }
-    ],
-    "families": ["GPT", "Anthropic", "国产模型"],
-    "limit": "Plus 0.08 · Pro 0.12 / 0.20。",
-    "tags": ["稳定", "Plus 0.08", "注册送 $1"],
-    "login": ["QQ邮箱"],
-    "updated": "2026.08.23",
-    "summary": "倍率清晰，覆盖 GPT、Anthropic 与 DeepSeek，适合日常调用。",
-    "url": "https://sub.vcnovb.cn/register?aff=5Q9PVN9HEFYS"
-  },
-  {
     "id": "zeekai",
     "name": "ZeeKai",
     "alias": "api.zeekai.cc",
@@ -232,30 +210,6 @@
     "updated": "2026.08.23",
     "summary": "聚合多个中转站，一个入口切换 GPT、Anthropic、Grok 与 DeepSeek 等模型。",
     "url": "https://aihub.top/register?aff=SFJ3HNFH7TZX"
-  },
-  {
-    "id": "a6api",
-    "name": "A6API",
-    "alias": "a6api.com",
-    "logo": "A",
-    "logoTone": "dark",
-    "category": "paid",
-    "featured": false,
-    "reward": "0.0036",
-    "rewardType": "price",
-    "checkin": null,
-    "models": [
-      { "label": "GPT 全系", "family": "gpt" },
-      { "label": "Anthropic", "family": "anthropic" },
-      { "label": "DeepSeek", "family": "deepseek" }
-    ],
-    "families": ["GPT", "Anthropic", "国产模型"],
-    "limit": "多商家供货实时比价，按 1M tokens 计价，低额充值即可先试。",
-    "tags": ["聚合", "自动路由"],
-    "login": ["GitHub", "Google", "Telegram"],
-    "updated": "2026.09.28",
-    "summary": "聚合多个中转站与模型商家，自动比价并按价格、成功率、延迟择优路由。",
-    "url": "https://a6api.com/?auth=register&aff=t34g"
   },
   {
     "id": "piteai",
